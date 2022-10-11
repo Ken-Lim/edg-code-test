@@ -1,4 +1,27 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        // Sdk and tools
+        compileSdkVersion = 33
+        minSdkVersion = 26
+        targetSdkVersion = 33
+        ktlintVersion = '0.47.1'
+
+        // App dependencies
+        appCompatVersion = '1.5.1'
+        constraintLayoutVersion = '2.1.4'
+        lifecycleVersion = '2.5.1'
+        materialVersion = '1.6.1'
+        navigationVersion = '2.5.2'
+
+        // Test related dependencies
+        espressoVersion = '3.4.0'
+        junitVersion = '4.13.2'
+        testExtJunit = '1.1.3'
+    }
+}
+
 plugins {
     id 'com.android.application' version '7.3.0' apply false
     id 'com.android.library' version '7.3.0' apply false
@@ -11,7 +34,7 @@ spotless {
         target '**/*.kt'
         targetExclude '.idea/'
         targetExclude "$buildDir/**/*.kt"
-        ktlint('0.47.1')
+        ktlint(ktlintVersion)
                 .editorConfigOverride(['max_line_length' : '120'])
     }
 }
