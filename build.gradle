@@ -14,6 +14,8 @@ buildscript {
         lifecycleVersion = '2.5.1'
         materialVersion = '1.6.1'
         navigationVersion = '2.5.2'
+        okhttpVersion = '5.0.0-alpha.3'
+        retrofitVersion = '2.9.0'
 
         // Test related dependencies
         espressoVersion = '3.4.0'
