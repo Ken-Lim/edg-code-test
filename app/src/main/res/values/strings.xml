@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EDA</string>
+    <string name="title_products">Products</string>
+    <string name="title_favourites">Favourites</string>
+</resources>
