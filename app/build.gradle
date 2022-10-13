@@ -51,6 +51,11 @@ dependencies {
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$testExtJunit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    testImplementation "io.mockk:mockk:$mockkVersion"
+    testImplementation "com.google.code.gson:gson:$gsonVersion"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTestVersion"
+    testImplementation "com.google.truth:truth:$truthVersion"
+    testImplementation "androidx.arch.core:core-testing:$coreTestingVersion"
 
     // Dagger - Hilt
     implementation "com.google.dagger:hilt-android:$daggerHiltVersion"
